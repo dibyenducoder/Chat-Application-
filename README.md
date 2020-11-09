@@ -10,7 +10,8 @@ Responsible for the following objectives:-
 * List of the active users are shown. 
 
 ## Client Side 
-It communicates with the server by sending messages to the server and listening for notifications.
+It communicates with the server by sending messages to the server and listening for notifications.<br/>
+
 For UI :- The html file is used to build the structure of the websites and its contents. 
 The CSS file is here to make the web page more user friendly and good looking which will improve the user experience.
 
