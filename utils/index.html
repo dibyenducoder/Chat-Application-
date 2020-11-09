@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            JUTalkie
+        </title>
+        <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+     
+        <div class="chat__sidebar">
+                <h4>Active Users:-</h4>
+                <span id="counter"></span>
+                <ul class="feedback" id="users" ></ul>
+        </div>
+        <section class="chat_portion">
+            <div class="logo">
+                <img height="30" src="/JU.png" alt=""><h1>JUTalkie</h1>
+                
+                <!-- <span id="counter"></span> -->
+            </div>
+            
+            <div class="msg_area" id="historyMsg">
+            </div>
+
+            <div>
+                <textarea id="textarea" placeholder="Tell your friends about....">
+                </textarea>
+                <i class="fa fa-microphone fa-2x" id="start-record-btn"></i>
+                <button id="sendBtn" type="button">
+                    <i class="fa fa-paper-plane"></i>
+                </button>
+               
+                <label for="sendImage" class="imageLable">
+                    <!-- <input class="uploadFile" type="button" value="image"  /> -->
+                    <i class="fa fa-paperclip fa-lg"></i>
+                    <input id="sendImage" type="file" value="image"  />
+                   
+                </label>
+            </div>
+        </section>
+      
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="/client.js"></script>
+        
+    </body>
+</html>

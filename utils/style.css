@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #F8F8F8;
+    font-family: 'Roboto', sans-serif;
+}
+.chat__sidebar {
+    height: 100vh;
+    color: white;
+    background: #333744;
+    width: 225px;
+    overflow-y: scroll
+}
+.chat__sidebar h4{
+    color: #db6f16;
+    background-color: rgb(28, 35, 56) ;
+    padding: 20px;
+}
+ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0; 
+}
+ul li::before {
+    content: "\2022";  
+    color: rgb(32, 216, 63); 
+    font-weight: bold; 
+    display: inline-block; 
+    width: 1em; 
+    margin-left: 2em; 
+}
+  
+ul li {
+color: #1c3018;
+border: 1px solid #ddd; 
+margin-top: -1px; 
+background-color: #f6f6f6; 
+padding: 12px;
+}
+
+section.chat_portion {
+    width: 800px;
+    max-width: 90%;
+    background: #fff;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    /* border-bottom: 2px #5846bd; */
+}
+ 
+.logo {
+    padding: 20px;
+    background: #f1f1f1;
+    display: flex;
+    align-items: center;
+}
+.logo h1 {
+    font-size: 20px;
+    color: rgb(212, 42, 42);
+    margin-left: 10px;
+}
+/* .logo span{
+    color: rgb(23, 219, 23);
+    margin-left: auto;
+} */
+.msg_area{
+    height: 500px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding-top: 40px;
+    background-image: url('https://cdn.shopify.com/s/files/1/1516/0340/products/Waltzer_Waddles-01_540x.png?v=1580840186');
+    /* background-repeat: no-repeat; */
+    /* background-image: url('https://e7.pngegg.com/pngimages/574/208/png-clipart-giant-panda-wedding-invitation-bear-baby-shower-cuteness-hello-white-child.png'); */
+    background-size: 500px ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+#historyMsg img {
+    max-width: 40%;
+}
+
+textarea {
+    width: 90%;
+    border: none;
+    padding: 20px;
+    font-size: 16px;
+    outline: none;
+    background: #161616;
+    color: #f1f1f1; 
+    border-radius: 25px ;
+    /* height: 10px; */
+    /* border-top: 4px #d1966f; */
+}
+
+.msg{
+    padding: 20px; 
+    border-radius: 4px; 
+    margin-bottom: 40px;
+    max-width: 300px;
+    position: relative;
+}
+.in {
+    background: #cbc7cc;
+    color: #1c1c1f;
+     
+}
+.out {
+    background: #d1966f;
+    color: #fff; 
+    margin-left: auto;
+}
+.announce {
+    background: #f0bdbd;
+    color: rgb(145, 129, 37);
+    position: relative;
+    left:200px;
+}
+.msg h4 {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    color: #333;
+    font-size: 14px;
+}
+button {
+    background-color: #db6f16; 
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: absolute;
+    right: 270px;
+    bottom: -10px;
+    border-radius: 50%;
+}
+button .fa
+{
+    color:black;
+}
+
+#sendImage {
+    position: absolute;
+    width: 52px;
+    opacity: 0;
+    right: 370px;
+    bottom: 5px;
+    overflow: hidden;
+}
+.fa-paperclip {
+    color: #e6ece9;
+    position : absolute;
+    right: 370px;
+    bottom: 1px;
+}
+.fa-microphone{
+    color: #db6f16;
+    position : absolute;
+    right: 340px;
+    bottom: 0px;
+  }
