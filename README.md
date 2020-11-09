@@ -17,7 +17,7 @@ The CSS file is here to make the web page more user friendly and good looking wh
 
 For Chat Script :- Implemented in basic DOM HTML 
 
-## Feaures 
+## Features 
 * Multiple users can chat together in real-time. 
 * Users can join and leave if they wish. 
 * All users will get notified when the user joins or leaves the current chat.
